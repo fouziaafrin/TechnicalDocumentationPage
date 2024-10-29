@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Installation Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Node.js Installation Documentation</h1>
+    </header>
+
+    <nav id="navbar">
+        <header>Menu</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#requirements">Requirements</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+            <li><a class="nav-link" href="#installation">Installation</a></li>
+            <li><a class="nav-link" href="#configuration">Configuration</a></li>
+            <li><a class="nav-link" href="#troubleshooting">Troubleshooting</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <p>This documentation provides a step-by-step guide to installing and configuring Node.js. Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a browser. It is widely used for building server-side and networking applications.</p>
+            <p>To install Node.js, you'll need basic knowledge of terminal commands like <code>cd</code> and <code>mkdir</code>.</p>
+        </section>
+
+        <section id="requirements" class="main-section">
+            <header>
+                <h2>Requirements</h2>
+            </header>
+            <p>Before you begin the installation, ensure your system meets the following requirements:</p>
+            <ul>
+                <li>Operating System: Windows 10 or later, macOS 10.14 or later, or Linux</li>
+                <li>Minimum 4 GB RAM</li>
+                <li>500 MB of free disk space</li>
+                <li>Internet connection</li>
+            </ul>
+            <p>To check your system version, run <code>uname -a</code> on Linux/macOS or <code>winver</code> on Windows.</p>
+        </section>
+
+        <section id="download" class="main-section">
+            <header>
+                <h2>Download</h2>
+            </header>
+            <p>Download the Node.js installer from the official website:</p>
+            <p><code><a href="https://nodejs.org/en">https://nodejs.org</a></code></p>
+            <p>Choose the LTS (Long-Term Support) version for better stability. After downloading, verify the checksum of the file using <code>sha256sum</code> on Linux/macOS or <code>CertUtil</code> on Windows.</p>
+        </section>
+
+        <section id="installation" class="main-section">
+            <header>
+                <h2>Installation</h2>
+            </header>
+            <p>Follow these steps to install Node.js:</p>
+            <ol>
+                <li>Open the downloaded installer file.</li>
+                <li>Follow the on-screen instructions to complete the installation.</li>
+                <li>Once installed, verify by typing <code>node -v</code> and <code>npm -v</code> in your terminal to check that both Node.js and npm were installed successfully.</li>
+            </ol>
+        </section>
+
+        <section id="configuration" class="main-section">
+            <header>
+                <h2>Configuration</h2>
+            </header>
+            <p>After installation, configure Node.js by following these steps:</p>
+            <ol>
+                <li>Open your terminal.</li>
+                <li>Set a global npm package directory with the command: <code>npm config set prefix ~/npm-global</code>.</li>
+                <li>Add the directory to your PATH by adding <code>export PATH=~/npm-global/bin:$PATH</code> to your shell profile.</li>
+            </ol>
+        </section>
+
+        <section id="troubleshooting" class="main-section">
+            <header>
+                <h2>Troubleshooting</h2>
+            </header>
+            <p>If you encounter issues during installation or configuration, refer to the following troubleshooting tips:</p>
+            <ul>
+                <li>Ensure your system meets all requirements.</li>
+                <li>Make sure Node.js and npm are added to your PATH.</li>
+                <li>For issues with permissions, run commands as administrator (Windows) or use <code>sudo</code> on Linux/macOS.</li>
+                <li>Check the official Node.js documentation or community forums for more help.</li>
+            </ul>
+            <p>For any other issues, try reinstalling or updating Node.js to the latest version.</p>
+        </section>
+    </main>
+</body>
+</html>
